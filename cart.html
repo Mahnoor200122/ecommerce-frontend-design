@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <img src="images/logo.png" alt="Logo">
+        <span class="brand-name">Brand</span>
+      </div>
+      <div class="header-icons">
+        <div class="icon-box">
+          <i class="fas fa-user"></i>
+          <span>Profile</span>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-comment-dots"></i>
+          <span>Message</span>
+        </div>
+        <div class="icon-box">
+          <i class="fas fa-box"></i>
+          <span>Orders</span>
+        </div>
+        <div class="icon-box" style="position: relative;">
+          <i class="fas fa-shopping-cart"></i>
+          <span>Cart</span>
+          <span class="cart-count">3</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Cart Header -->
+    <div class="cart-header">
+      My Cart (3 items)
+    </div>
+
+    <!-- Main Cart Section -->
+    <div class="cart-main">
+      <!-- Cart Items -->
+      <div class="cart-items">
+        <!-- Item 1 -->
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="images/shirt4.jpg" alt="Product 1">
+          </div>
+          <div class="item-details">
+            <div class="item-title">T-shirts with multiple colors, for men and lady</div>
+            <div class="item-desc">Size: medium, Color: blue,  Seller: Artel Market</div>
+          </div>
+          <div class="item-price">$78.99</div>
+          <div class="item-quantity">
+            <button class="quantity-btn">-</button>
+            <input type="text" class="quantity-input" value="9">
+            <button class="quantity-btn">+</button>
+          </div>
+          <div class="remove-item">Remove</div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="images/bag.jpg" alt="Product 2">
+          </div>
+          <div class="item-details">
+            <div class="item-title">Bag for men</div>
+            <div class="item-desc">Size: medium, Color: blue,  Material: leather</div>
+          </div>
+          <div class="item-price">$39</div>
+          <div class="item-quantity">
+            <button class="quantity-btn">-</button>
+            <input type="text" class="quantity-input" value="3">
+            <button class="quantity-btn">+</button>
+          </div>
+          <div class="remove-item">Remove</div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="cart-item">
+          <div class="item-image">
+            <img src="images/lamp.jpg" alt="Product 3">
+          </div>
+          <div class="item-details">
+            <div class="item-title">Lamp</div>
+            <div class="item-desc">Side table lamp; Color: Brown</div>
+          </div>
+          <div class="item-price">$170</div>
+          <div class="item-quantity">
+            <button class="quantity-btn">-</button>
+            <input type="text" class="quantity-input" value="1">
+            <button class="quantity-btn">+</button>
+          </div>
+          <div class="remove-item">Remove</div>
+        </div>
+
+        <!-- Cart Actions -->
+        <div class="cart-actions">
+          <div class="back-to-shop">
+            <i class="fas fa-arrow-left"></i> Back to shop
+          </div>
+          <div class="remove-all">
+            Remove all
+          </div>
+        </div>
+
+        <!-- Secure Payment Info -->
+        <div class="secure-info">
+          <div class="info-item">
+            <i class="fas fa-lock"></i> Secure payment
+          </div>
+          <div class="info-item">
+            <i class="fas fa-headset"></i> Customer support
+          </div>
+          <div class="info-item">
+            <i class="fas fa-truck"></i> Free delivery
+          </div>
+        </div>
+      </div>
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <!-- Coupon Box -->
+        <div class="coupon-box">
+          <div class="coupon-title">Have a coupon?</div>
+          <div class="coupon-input">
+            <input type="text" placeholder="Add a coupon">
+            <button>Apply</button>
+          </div>
+        </div>
+
+        <!-- Order Summary -->
+        <div class="order-summary">
+          <div class="summary-title">Order Summary</div>
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span>$997.91</span>
+          </div>
+          <div class="summary-row">
+            <span>Discount</span>
+            <span>-$60.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Tax</span>
+            <span>$139.71</span>
+          </div>
+          <div class="summary-row total">
+            <span>Total</span>
+            <span>$1077.62</span>
+          </div>
+          <button class="checkout-btn">Checkout</button>
+          <div class="payment-methods">
+            <img src="images/payment.png" alt="Visa">
+            <img src="images/logo2.png" alt="Mastercard">
+            <img src="images/Logo1.png" alt="American Express">
+            <img src="images/visa.png" alt="PayPal">
+            <img src="images/image 21.png" alt="Apple Pay">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Saved for Later -->
+    <div class="saved-section">
+      <div class="section-header">
+        <div class="section-title">Saved for later</div>
+      </div>
+      <div class="saved-items">
+        <!-- Saved Item 1 -->
+        <div class="saved-item">
+          <div class="saved-image">
+            <img src="images/tab.png" alt="Saved 1">
+          </div>
+          <div class="saved-price">$99.50</div>
+          <div class="saved-desc">Wireless Earbuds with charging case</div>
+          <button class="move-to-cart">Move to cart</button>
+        </div>
+
+        <!-- Saved Item 2 -->
+        <div class="saved-item">
+          <div class="saved-image">
+            <img src="images/mbl.png" alt="Saved 2">
+          </div>
+          <div class="saved-price">$99.50</div>
+          <div class="saved-desc">Phone stand with wireless charger</div>
+          <button class="move-to-cart">Move to cart</button>
+        </div>
+
+        <!-- Saved Item 3 -->
+        <div class="saved-item">
+          <div class="saved-image">
+            <img src="images/p1.png" alt="Saved 3">
+          </div>
+          <div class="saved-price">$99.50</div>
+          <div class="saved-desc">Smartphone lens kit</div>
+          <button class="move-to-cart">Move to cart</button>
+        </div>
+
+        <!-- Saved Item 4 -->
+        <div class="saved-item">
+          <div class="saved-image">
+            <img src="images/p2.png" alt="Saved 4">
+          </div>
+          <div class="saved-price">$99.50</div>
+          <div class="saved-desc">Phone case with card holder</div>
+          <button class="move-to-cart">Move to cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="newsletter">
+      <div class="newsletter-text">
+        <div class="newsletter-title">Super discount on more than 100 USD</div>
+        <div class="newsletter-subtitle">Have you ever finally just wrte dummy info</div>
+      </div>
+      <button class="shop-now">Shop now</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!-- Brand Info -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo">
+            <span>Brand</span>
+          </div>
+          <div class="footer-text">
+            Best information about the company gives here
+          </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="footer-col">
+          <div class="footer-title">About</div>
+          <ul>
+            <li>About us</li>
+            <li>Find stores</li>
+            <li>Categories</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+
+        <!-- Partnership -->
+        <div class="footer-col">
+          <div class="footer-title">Partnership</div>
+          <ul>
+            <li>About us</li>
+            <li>Find stores</li>
+            <li>Categories</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="footer-col">
+          <div class="footer-title">Information</div>
+          <ul>
+            <li>Help center</li>
+            <li>Money refund</li>
+            <li>Shipping</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <!-- For users -->
+        <div class="footer-col">
+          <div class="footer-title">For users</div>
+          <ul>
+            <li>Login</li>
+            <li>Register</li>
+            <li>Settings</li>
+            <li>My orders</li>
+          </ul>
+        </div>
+
+        <!-- Get app -->
+        <div class="footer-col">
+          <div class="footer-title">Get app</div>
+          <button class="app-store">
+            <i class="fab fa-apple"></i> App Store
+          </button>
+          <button class="google-play">
+            <i class="fab fa-google-play"></i> Google Play
+          </button>
+        </div>
+      </div>
+    </footer>
+  </div>
+<script src="cart.js"></script>
+</body>
+</html>

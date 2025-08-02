@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing - E-commerce</title>
+    <link rel="stylesheet" href="product-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- First Header Line -->
+        <div class="header-line1">
+            <div class="brand">
+                <img src="images/logo.png" alt="Logo">
+                <span class="brand-name">Brand</span>
+            </div>
+            <div class="center-section">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                <div class="all-category">
+                    <span>All Category</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="profile">
+                    <i class="far fa-user"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="message">
+                    <i class="far fa-comment"></i>
+                    <span>Message</span>
+                </div>
+                <div class="orders">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Header Line -->
+        <div class="header-line2">
+            <div class="left-links">
+                <div class="menu-icon">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="link">All Category</div>
+                <div class="link">Hot Offers</div>
+                <div class="link">Gift Boxes</div>
+                <div class="link">Projects</div>
+                <div class="link">Menu Items</div>
+                <div class="link">Help</div>
+            </div>
+            <div class="right-links">
+                <div class="dropdown">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <span>USD</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <img src="images/usa.jpg" alt="flag" class="flag">
+                    <span>Ship to</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+        <div class="link">
+    <a href="wishlist.html">
+        <i class="far fa-heart"></i> Wishlist
+        <span class="wishlist-count">${wishlist.length}</span>
+    </a>
+</div>
+
+    </header>
+
+    <div class="container">
+        <!-- Left Sidebar - 240px width -->
+        <div class="left-sidebar">
+            <!-- Category Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Category</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox"> Mobile accessory
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Electronics
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Smartphones
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Modern tech
+                    </label>
+                </div>
+                <a href="#" class="see-all">See all</a>
+            </div>
+
+            <!-- Brands Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Brands</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox"> Samsung
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Apple
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Huawei
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Pocco
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Lenovo
+                    </label>
+                </div>
+                <a href="#" class="see-all">See all</a>
+            </div>
+
+            <!-- Features Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Features</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox"> Metallic
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Plastic cover
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 8GB RAM
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Super power
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Large memory
+                    </label>
+                </div>
+                <a href="#" class="see-all">See all</a>
+            </div>
+
+            <!-- Price Range Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Price range</h3>
+                <input type="range" class="price-range" min="0" max="1000" value="500">
+                <div class="price-inputs">
+                    <input type="number" placeholder="Min" value="0">
+                    <input type="number" placeholder="Max" value="1000">
+                </div>
+                <button class="apply-btn">Apply</button>
+            </div>
+
+            <!-- Condition Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Condition</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox"> Any
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Refurbished
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Brand new
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> Old items
+                    </label>
+                </div>
+            </div>
+
+            <!-- Ratings Filter Box -->
+            <div class="filter-box">
+                <h3 class="filter-title">Ratings</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox"> 5 Star
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 4 Star
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 3 Star
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox"> 2 Star
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Content - 920px width -->
+        <div class="right-content">
+            <!-- Listing Header -->
+            <div class="listing-header">
+                <div class="results-count">12,911 items in <strong>Mobile accessory</strong></div>
+                <div class="view-options">
+                    <div class="view-option">
+                        <i class="fas fa-check-circle"></i> Verified only
+                    </div>
+                    <div class="view-option">
+                        <i class="fas fa-bolt"></i> Featured
+                    </div>
+                    <div class="view-option">
+                        <i class="fas fa-filter"></i> Filter
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product List - 6 items -->
+            <div class="product-list">
+                <!-- Product Item 1 -->
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="images/samsung.jpg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Premium Smartphone X2000 with 128GB Storage</h3>
+                        <div class="product-price">$599.99</div>
+                        <div class="product-meta">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="orders">154 orders</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <p class="product-description">
+                            The latest smartphone with advanced features including 48MP camera, 6.5" AMOLED display.
+                        </p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+        <!-- Product Item 2 -->
+<a href="product-detail.html" class="product-item-link">
+    <div class="product-item">
+        <div class="product-image-container">
+            <img src="images/Group 1004.png" alt="Product" class="product-image">
+        </div>
+        <div class="product-details">
+            <h3 class="product-title">Men's T-shirt</h3>
+            <div class="product-price">$129.99</div>
+            <div class="product-meta">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <span class="orders">87 orders</span>
+                <span class="shipping">Free shipping</span>
+            </div>
+            <p class="product-description">
+                Men's T-shirt comfortable relaxing, quality stuff
+            </p>
+            <span class="view-details">View details</span>
+        </div>
+        <button class="wishlist-btn">
+            <i class="far fa-heart"></i>
+        </button>
+    </div>
+</a>
+
+                <!-- Product Item 3 -->
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="images/p1.png" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Smart Watch Series 5 with Fitness Tracker</h3>
+                        <div class="product-price">$249.99</div>
+                        <div class="product-meta">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="orders">203 orders</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <p class="product-description">
+                            Advanced smartwatch with heart rate monitoring, GPS tracking, water resistance.
+                        </p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Product Item 4 -->
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="images/speaker.jpg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Portable Bluetooth Speaker - Waterproof</h3>
+                        <div class="product-price">$79.99</div>
+                        <div class="product-meta">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="orders">142 orders</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <p class="product-description">
+                            Take your music anywhere with this portable waterproof Bluetooth speaker.
+                        </p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Product Item 5 -->
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="images/smarttv.jpg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">4K Ultra HD Smart TV 55"</h3>
+                        <div class="product-price">$699.99</div>
+                        <div class="product-meta">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="orders">56 orders</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <p class="product-description">
+                            Immerse yourself in stunning 4K Ultra HD picture quality with this smart TV.
+                        </p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+
+                <!-- Product Item 6 -->
+                <div class="product-item">
+                    <div class="product-image-container">
+                        <img src="images/macbook.jpg" alt="Product" class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Gaming Laptop Pro - RTX 3060</h3>
+                        <div class="product-price">$1299.99</div>
+                        <div class="product-meta">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="orders">34 orders</span>
+                            <span class="shipping">Free shipping</span>
+                        </div>
+                        <p class="product-description">
+                            High-performance gaming laptop with NVIDIA RTX 3060, 16GB RAM, 1TB SSD.
+                        </p>
+                        <a href="#" class="view-details">View details</a>
+                    </div>
+                    <button class="wishlist-btn">
+                        <i class="far fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <div class="show-count">Show 10</div>
+                <div class="page-controls">
+                    <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn">2</button>
+                    <button class="page-btn">3</button>
+                    <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <p>Subscribe on our newsletter</p>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="input-wrapper">
+            <span class="email-icon">&#9993;</span>
+            <input type="email" placeholder="Email" />
+        </div>
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Brand Info -->
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Brand</span>
+                </div>
+                <div class="footer-text">
+                    Best information about the company gives here
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="footer-col">
+                <div class="footer-title">About</div>
+                <ul>
+                    <li>About us</li>
+                    <li>Find stores</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+
+            <!-- Partnership -->
+            <div class="footer-col">
+                <div class="footer-title">Partnership</div>
+                <ul>
+                    <li>About us</li>
+                    <li>Find stores</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div class="footer-col">
+                <div class="footer-title">Information</div>
+                <ul>
+                    <li>Help center</li>
+                    <li>Money refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+            <!-- For users -->
+            <div class="footer-col">
+                <div class="footer-title">For users</div>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My orders</li>
+                </ul>
+            </div>
+
+            <!-- Get app -->
+            <div class="footer-col">
+                <div class="footer-title">Get app</div>
+                <button class="app-store">
+                    <i class="fab fa-apple"></i> App Store
+                </button>
+                <button class="google-play">
+                    <i class="fab fa-google-play"></i> Google Play
+                </button>
+            </div>
+        </div>
+    </footer>
+    <script src="product-list.js"></script>
+</body>
+</html>

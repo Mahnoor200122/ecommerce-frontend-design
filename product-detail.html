@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - E-commerce</title>
+    <link rel="stylesheet" href="product-detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- First Header Line -->
+        <div class="header-line1">
+             <div class="brand">
+        <img src="images/logo.png" alt="Logo">
+        <span class="brand-name">Brand</span>
+      </div>
+            <div class="center-section">
+               
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                 <div class="all-category">
+                    <span>All Category</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="profile">
+                    <i class="far fa-user"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="message">
+                    <i class="far fa-comment"></i>
+                    <span>Message</span>
+                </div>
+                <div class="orders">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Header Line -->
+        <div class="header-line2">
+            <div class="left-links">
+                <div class="menu-icon">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="link">All Category</div>
+                <div class="link">Hot Offers</div>
+                <div class="link">Gift Boxes</div>
+                <div class="link">Projects</div>
+                <div class="link">Menu Items</div>
+                <div class="link">Help</div>
+            </div>
+            <div class="right-links">
+                <div class="dropdown">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <span>USD</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <img src="images/usa.jpg" alt="flag" class="flag">
+                    <span>Ship to</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third Header Line (Breadcrumbs) -->
+        <div class="breadcrumbs">
+            <span>Home</span>
+            <i class="fas fa-chevron-right"></i>
+            <span>Clothings</span>
+            <i class="fas fa-chevron-right"></i>
+            <span>Men's wear</span>
+            <i class="fas fa-chevron-right"></i>
+            <span>Summer clothing</span>
+        </div>
+    </header>
+
+   <!-- Main Product Section -->
+<main class="container">
+    <div class="product-main">
+        <!-- Left Side - Product Gallery -->
+        <div class="product-gallery">
+            <!-- Main Product Image -->
+            <div class="main-image">
+                <img src="images/Group 1004.png" alt="Men's Long Sleeve T-shirt">
+            </div>
+            
+            <!-- Thumbnail Gallery -->
+            <div class="thumbnail-container">
+                <div class="thumbnail">
+                    <img src="images/image 38.png" alt="Product view 1">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/image 35.png" alt="Product view 2">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/image 36.png" alt="Product view 3">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/image 40.png" alt="Product view 4">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/Image.png" alt="Product view 5">
+                </div>
+                <div class="thumbnail">
+                    <img src="images/Image (1).png" alt="Product view 6">
+                </div>
+            </div>
+        </div>
+        
+
+            <!-- Center - Product Info -->
+            <div class="product-info">
+                <div class="stock-status">
+                    <i class="fas fa-check-circle"></i>
+                    <span>In Stock</span>
+                </div>
+                <h1 class="product-title">Men's Long Sleeve T-shirt Cotton Base Layer Slim Muscle</h1>
+                <div class="product-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>9.3</span>
+                    <span>32 reviews</span>
+                    <span>154 sold</span>
+                </div>
+                
+                <!-- Price Tiers -->
+                <div class="price-tiers">
+                    <div class="tier">
+                        <span class="price">$98</span>
+                        <span class="range">0-100pcs</span>
+                    </div>
+                    <div class="tier">
+                        <span class="price">$78</span>
+                        <span class="range">100-700pcs</span>
+                    </div>
+                    <div class="tier">
+                        <span class="price">$70</span>
+                        <span class="range">700+ pcs</span>
+                    </div>
+                </div>
+                
+                <!-- Product Details -->
+                <div class="product-details">
+                    <div class="detail-row">
+                        <span class="detail-label">Name:</span>
+                        <span class="detail-value">Men's T-shirt</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Material:</span>
+                        <span class="detail-value">100% Cotton</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Size:</span>
+                        <span class="detail-value">S, M, L, XL</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Product Code:</span>
+                        <span class="detail-value">TSH-2023-MEN</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Color:</span>
+                        <span class="detail-value">Black, White, Navy</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Brand:</span>
+                        <span class="detail-value">FashionPro</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label">Warranty:</span>
+                        <span class="detail-value">1 Year</span>
+                    </div>
+                </div>
+                
+                <!-- Quantity and Add to Cart -->
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="text" value="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side - Supplier Info -->
+            <div class="supplier-info">
+                <div class="supplier-header">
+                    <span>Supplier</span>
+                    <span>Germany</span>
+                </div>
+                <div class="supplier-location">
+                    <img src="images/germany.png" alt="Germany Flag" class="flag">
+                    <span>Berlin</span>
+                </div>
+                <div class="supplier-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified Seller</span>
+                </div>
+                <div class="shipping-info">
+                    <i class="fas fa-globe"></i>
+                    <span>World Wide Shipping</span>
+                </div>
+                <button class="inquiry-btn">Send Inquiry</button>
+                <div class="seller-profile">
+                    <span>Seller's Profile</span>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="save-for-later">
+                    <i class="far fa-heart"></i>
+                    <span>Save for Later</span>
+                </div>
+            </div>
+        </div>
+
+
+ <div class="container">
+        <!-- Product Description Section -->
+        <div class="product-description-container">
+            <!-- Left Side - Description Content -->
+            <div class="description-section">
+                <div class="description-tabs">
+                    <div class="tab active">Description</div>
+                    <div class="tab">Reviews</div>
+                    <div class="tab">Shipping</div>
+                    <div class="tab">About Seller</div>
+                </div>
+                <div class="description-content">
+                    <p>This premium quality men's t-shirt is made from 100% organic cotton, providing exceptional comfort and durability. Perfect for both casual and semi-formal occasions, it features a slim fit design that enhances your physique.</p>
+                    
+                    <div class="specs-box">
+                        <div class="spec-row">
+                            <i class="fas fa-check"></i>
+                            <span>Material: 100% Organic Cotton</span>
+                        </div>
+                        <div class="spec-row">
+                            <i class="fas fa-check"></i>
+                            <span>Fit: Slim Muscle Fit</span>
+                        </div>
+                        <div class="spec-row">
+                            <i class="fas fa-check"></i>
+                            <span>Care: Machine Wash Cold</span>
+                        </div>
+                        <div class="spec-row">
+                            <i class="fas fa-check"></i>
+                            <span>Neck: Round Neck</span>
+                        </div>
+                        <div class="spec-row">
+                            <i class="fas fa-check"></i>
+                            <span>Sleeve: Long Sleeve</span>
+                        </div>
+                    </div>
+                    
+                    <div class="additional-info">
+                        <h3>Additional Information</h3>
+                        <p>Product Code: TSH-2023-MEN</p>
+                        <p>Size Available: S, M, L, XL</p>
+                        <p>Color Options: Black, White, Navy Blue</p>
+                        <p>Weight: 0.3kg</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Recommendations -->
+            <div class="recommendations-section">
+                <h3>You May Also Like</h3>
+                <div class="recommended-products">
+                    <div class="recommended-product">
+                        <div class="rec-image">
+                            <img src="images/Group 558.png" alt="Men's Blue Coat Formal">
+                        </div>
+                        <div class="rec-info">
+                            <p>Men's Blue Coat Formal</p>
+                            <span>$45.99</span>
+                        </div>
+                    </div>
+                    <div class="recommended-product">
+                        <div class="rec-image">
+                            <img src="images/Group 558 (1).png" alt="Sleev shirt">
+                        </div>
+                        <div class="rec-info">
+                            <p>Men Shirt Sleeve Polo Contrast</p>
+                            <span>$29.99</span>
+                        </div>
+                    </div>
+                    <div class="recommended-product">
+                        <div class="rec-image">
+                            <img src="images/Group 558 (2).png" alt="Brown Hoodie">
+                        </div>
+                        <div class="rec-info">
+                            <p>Men's brown Hoodie</p>
+                            <span>$35.50</span>
+                        </div>
+                    </div>
+                    <div class="recommended-product">
+                        <div class="rec-image">
+                            <img src="images/Group 558 (3).png" alt="T-shirt">
+                        </div>
+                        <div class="rec-info">
+                            <p>Men's blue T-shirt</p>
+                            <span>$59.99</span>
+                        </div>
+                    </div>
+                    <div class="recommended-product">
+                        <div class="rec-image">
+                            <img src="images/Group 558 (4).png" alt="Bag">
+                        </div>
+                        <div class="rec-info">
+                            <p>Travelling bag</p>
+                            <span>$65.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div class="related-products">
+            <h3>Related Products</h3>
+            <div class="related-items">
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/walet.jpg" alt="Blue Wallet">
+                    </div>
+                    <div class="item-info">
+                        <p>Blue wallet for daily use</p>
+                        <span>$39.99</span>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/p1.png" alt="Smart watch">
+                    </div>
+                    <div class="item-info">
+                        <p>Silver grey smart watch</p>
+                        <span>$29.99</span>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/wihead.png" alt="Headphones">
+                    </div>
+                    <div class="item-info">
+                        <p>wireless Headphones</p>
+                        <span>$49.99</span>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/jeansshorts.jpg" alt="Shorts">
+                    </div>
+                    <div class="item-info">
+                        <p>Men's blue jeans shorts</p>
+                        <span>$59.99</span>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/electrickettle.jpg" alt="Kettle">
+                    </div>
+                    <div class="item-info">
+                        <p>Electric Kettle</p>
+                        <span>$79.99</span>
+                    </div>
+                </div>
+                <div class="related-item">
+                    <div class="item-image">
+                        <img src="images/stand.png" alt="Stand">
+                    </div>
+                    <div class="item-info">
+                        <p>Stand for routine use</p>
+                        <span>$89.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="newsletter">
+            <div class="newsletter-text">
+                <h3>Super discount on more than 100 USD</h3>
+                <p>Have you ever finally just wrte dummy info</p>
+            </div>
+            <button class="shop-now">Shop Now</button>
+        </div>
+    </main>
+
+   <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <!-- Brand Info -->
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="images/logo.png" alt="Logo">
+            <span>Brand</span>
+          </div>
+          <div class="footer-text">
+            Best information about the company gives here
+          </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-youtube"></i>
+          </div>
+        </div>
+
+        <!-- About -->
+        <div class="footer-col">
+          <div class="footer-title">About</div>
+          <ul>
+            <li>About us</li>
+            <li>Find stores</li>
+            <li>Categories</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+
+        <!-- Partnership -->
+        <div class="footer-col">
+          <div class="footer-title">Partnership</div>
+          <ul>
+            <li>About us</li>
+            <li>Find stores</li>
+            <li>Categories</li>
+            <li>Blogs</li>
+          </ul>
+        </div>
+
+        <!-- Information -->
+        <div class="footer-col">
+          <div class="footer-title">Information</div>
+          <ul>
+            <li>Help center</li>
+            <li>Money refund</li>
+            <li>Shipping</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+
+        <!-- For users -->
+        <div class="footer-col">
+          <div class="footer-title">For users</div>
+          <ul>
+            <li>Login</li>
+            <li>Register</li>
+            <li>Settings</li>
+            <li>My orders</li>
+          </ul>
+        </div>
+
+        <!-- Get app -->
+        <div class="footer-col">
+          <div class="footer-title">Get app</div>
+          <button class="app-store">
+            <i class="fab fa-apple"></i> App Store
+          </button>
+          <button class="google-play">
+            <i class="fab fa-google-play"></i> Google Play
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="product-detail.js"></script>
+</body>
+</html>
+
+
+
+
+

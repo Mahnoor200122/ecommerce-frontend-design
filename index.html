@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <!-- Header Section -->
+    <header class="header">
+        <!-- First Header Line -->
+        <div class="header-line1">
+             <div class="brand">
+        <img src="images/logo.png" alt="Logo">
+        <span class="brand-name">Brand</span>
+      </div>
+            <div class="center-section">
+               
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products...">
+                </div>
+                 <div class="all-category">
+                    <span>All Category</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="profile">
+                    <i class="far fa-user"></i>
+                    <span>Profile</span>
+                </div>
+                <div class="message">
+                    <i class="far fa-comment"></i>
+                    <span>Message</span>
+                </div>
+                <div class="orders">
+                    <i class="fas fa-clipboard-list"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Cart</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second Header Line -->
+        <div class="header-line2">
+            <div class="left-links">
+                <div class="menu-icon">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+                <div class="link">All Category</div>
+                <div class="link">Hot Offers</div>
+                <div class="link">Gift Boxes</div>
+                <div class="link">Projects</div>
+                <div class="link">Menu Items</div>
+                <div class="link">Help</div>
+            </div>
+            <div class="right-links">
+                <div class="dropdown">
+                    <span>English</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <span>USD</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="dropdown">
+                    <img src="images/germany.png" alt="flag" class="flag">
+                    <span>Ship to</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Category Section -->
+        <section class="category-section">
+            <div class="category-box">
+                <div class="category-item">Automobile</div>
+                <div class="category-item">Clothes and Wear</div>
+                <div class="category-item">Home Interiors</div>
+                <div class="category-item">Computer and Tech</div>
+                <div class="category-item">Tools Equipments</div>
+                <div class="category-item">Sports and Outdoor</div>
+                <div class="category-item">Animal and Pets</div>
+                <div class="category-item">Machinery Tools</div>
+                <div class="category-item">More Category</div>
+            </div>
+            <div class="main-image-box">
+                <div class="image-text-box">Summer Collection 2023</div>
+                <button class="learn-more-btn">Learn More</button>
+                <img src="images/Mask group.png" alt="Main Banner">
+            </div>
+            <div class="user-box">
+                <div class="user-profile">
+                    <img src="images/profile.jpg" alt="Profile">
+                    <div class="user-text">Hi, user let's get started</div>
+                </div>
+                <div class="user-buttons">
+                    <button class="join-btn">Join Now</button>
+                    <button class="login-btn">Login</button>
+                </div>
+                <div class="promo-box orange">
+                    Get US $10 off with a new supplier
+                </div>
+                <div class="promo-box grey">
+                    Send quotes with supplier preferences
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals and Offers Section -->
+        <section class="deals-section">
+            <div class="timer-box">
+                <h3>Deals and offers</h3>
+                <div class="timer">
+                    <div class="time-unit">
+                        <span class="time-value" id="days">04</span>
+                        <span class="time-label">Days</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="hours">12</span>
+                        <span class="time-label">Hours</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="minutes">45</span>
+                        <span class="time-label">Mins</span>
+                    </div>
+                    <div class="time-unit">
+                        <span class="time-value" id="seconds">30</span>
+                        <span class="time-label">Sec</span>
+                    </div>
+                </div>
+            </div>
+            <div class="deals-products">
+                <div class="deal-item">
+                    <img src="images/p1.png" alt="Smart Watch">
+                    <div class="deal-badge">-30%</div>
+                </div>
+                <div class="deal-item">
+                    <img src="images/p2.png" alt="Laptop">
+                    <div class="deal-badge">-25%</div>
+                </div>
+                <div class="deal-item">
+                    <img src="images/p3.png" alt="Camera">
+                    <div class="deal-badge">-40%</div>
+                </div>
+                <div class="deal-item">
+                    <img src="images/p4.png" alt="Headphones">
+                    <div class="deal-badge">-25%</div>
+                </div>
+                <div class="deal-item">
+                    <img src="images/p5.png" alt="Smartphone">
+                    <div class="deal-badge">-25%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home and Outdoor Section -->
+        <section class="product-section">
+            <div class="product-left-box">
+                <div class="product-category-text">Home and Outdoor</div>
+                <button class="source-now-btn">Source now</button>
+                <img src="images/left-aside.jpg" alt="Home and Outdoor">
+            </div>
+            <div class="product-right-box">
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Soft Chair</div>
+                        <div class="product-price">$19</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/sofa.jpg" alt="Soft Chair"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Lamp</div>
+                        <div class="product-price">$149.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/lamp.jpg" alt="Lamp"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Table</div>
+                        <div class="product-price">$29.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/table.jpg" alt="Table"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Shelf</div>
+                        <div class="product-price">$199.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/shelf.jpg" alt="Shelf"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Blender</div>
+                        <div class="product-price">$59.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/9.png" alt="Blender"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Planter</div>
+                        <div class="product-price">$24.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/planter.jpg" alt="Planter"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Outdoor Rug</div>
+                        <div class="product-price">$39.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/rug.jpg" alt="Outdoor Rug"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Stand</div>
+                        <div class="product-price">$49.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/stand.png" alt="Stand"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Electronics Section -->
+        <section class="product-section">
+            <div class="product-left-box">
+                <div class="product-category-text">Customer Electronics</div>
+                <button class="source-now-btn">Source now</button>
+                <img src="images/Group 970.png" alt="Electronics">
+            </div>
+            <div class="product-right-box">
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Smartphone X</div>
+                        <div class="product-price">$699.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/iphone14.jpg" alt="Smartphone"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">4K TV</div>
+                        <div class="product-price">$899.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/smarttv.jpg" alt="4K TV"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Laptop Pro</div>
+                        <div class="product-price">$1299.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/macbook.jpg" alt="Laptop"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Wireless Earbuds</div>
+                        <div class="product-price">$149.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/wihead.png" alt="Earbuds"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Smart Watch</div>
+                        <div class="product-price">$249.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/p1.png" alt="Smart Watch"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Bluetooth Speaker</div>
+                        <div class="product-price">$79.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/speaker.jpg" alt="Speaker"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Gaming Console</div>
+                        <div class="product-price">$499.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/gaming console.jpg" alt="Gaming Console"></a>
+                </div>
+                <div class="product-item">
+                    <div class="product-info">
+                        <div class="product-name">Camera DSLR</div>
+                        <div class="product-price">$899.99</div>
+                    </div>
+                    <a href="product-list.html">
+                    <img src="images/canon.jpg" alt="Camera"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Supplier Quote Section -->
+        <section class="supplier-section">
+            <div class="supplier-text-box">
+                <h2>An easy way to send requests to all suppliers</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+            </div>
+            <div class="supplier-form-box">
+                <h3>Send quote to suppliers</h3>
+                <form>
+                    <input type="text" placeholder="What item you need?">
+                    <textarea placeholder="Type more details"></textarea>
+                    <div class="quantity-box">
+                        <input type="text" placeholder="Quantity">
+                        <select>
+                            <option>PCs</option>
+                            <option>Dozen</option>
+                            <option>Kg</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="send-inquiry-btn">Send inquiry</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Recommended Products Section -->
+        <section class="recommended-section">
+            <h2 class="section-title">Recommended Items</h2>
+            <div class="recommended-products">
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/wihead.png" alt="Wireless Headphones">
+                    </div>
+                    <div class="recommended-price">$129.99</div>
+                    <div class="recommended-name">Premium Wireless Headphones with Noise Cancellation</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/fitness.jpg" alt="Smart Watch">
+                    </div>
+                    <div class="recommended-price">$199.99</div>
+                    <div class="recommended-name">Fitness Tracker Smart Watch with Heart Rate Monitor</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/speaker.jpg" alt="Bluetooth Speaker">
+                    </div>
+                    <div class="recommended-price">$89.99</div>
+                    <div class="recommended-name">Portable Bluetooth Speaker with 20H Playtime</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/powerbank.jpg" alt="Power Bank">
+                    </div>
+                    <div class="recommended-price">$49.99</div>
+                    <div class="recommended-name">20000mAh Fast Charging Power Bank</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/hp.jpg" alt="Laptop Backpack">
+                    </div>
+                    <div class="recommended-price">$59.99</div>
+                    <div class="recommended-name">Anti-Theft Waterproof Laptop Backpack</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/wireless.jpg" alt="Wireless Charger">
+                    </div>
+                    <div class="recommended-price">$29.99</div>
+                    <div class="recommended-name">3-in-1 Fast Wireless Charging Station</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/earbuds.jpg" alt="Earbuds">
+                    </div>
+                    <div class="recommended-price">$79.99</div>
+                    <div class="recommended-name">True Wireless Earbuds with Charging Case</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/tablet.jpg" alt="Tablet">
+                    </div>
+                    <div class="recommended-price">$299.99</div>
+                    <div class="recommended-name">Tablet</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/tab.png" alt="tab">
+                    </div>
+                    <div class="recommended-price">$249.99</div>
+                    <div class="recommended-name">27" Full HD LED Monitor with HDMI</div>
+                </div>
+                <div class="recommended-item">
+                    <div class="recommended-img-box">
+                        <img src="images/keyboard.jpg" alt="Keyboard">
+                    </div>
+                    <div class="recommended-price">$69.99</div>
+                    <div class="recommended-name">Mechanical Gaming Keyboard RGB Backlit</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Extra Services Section -->
+        <section class="extra-services-section">
+            <h2 class="section-title">Our Extra Services</h2>
+            <div class="services-container">
+                <div class="service-item">
+                    <div class="service-img-box">
+                        <img src="images/industry.jpg" alt="Industry">
+                    </div>
+                    <div class="service-name">Sources from industry Hubs</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img-box">
+                        <img src="images/custoize.jpg" alt="Customization">
+                    </div>
+                    <div class="service-name">Customize your products</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img-box">
+                        <img src="images/shipping.jpg" alt="Dropshipping">
+                    </div>
+                    <div class="service-name">Fast, reliable shipping by ocean or air</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-img-box">
+                        <img src="images/monitoring.jpg" alt="Monitoring">
+                    </div>
+                    <div class="service-name">Product monitoring and inspection</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Suppliers by Region Section -->
+        <section class="suppliers-region-section">
+            <h2 class="section-title">Suppliers by Region</h2>
+            <div class="regions-container">
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/usa.jpg" alt="USA Flag">
+                    </div>
+                    <div class="region-name">United States</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/china.png" alt="China Flag">
+                    </div>
+                    <div class="region-name">China</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/germany.png" alt="Germany Flag">
+                    </div>
+                    <div class="region-name">Germany</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/italy.png" alt="Italy Flag">
+                    </div>
+                    <div class="region-name">Italy</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/britain.png" alt="UK Flag">
+                    </div>
+                    <div class="region-name">United Kingdom</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/france.jpg" alt="France Flag">
+                    </div>
+                    <div class="region-name">France</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/denmark.jpg" alt="Denmark Flag">
+                    </div>
+                    <div class="region-name">Denmark</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/australia.png" alt="Australia Flag">
+                    </div>
+                    <div class="region-name">Australia</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/russia.jpg" alt="Russia Flag">
+                    </div>
+                    <div class="region-name">Russia</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+                <div class="region-item">
+                    <div class="region-flag">
+                        <img src="images/uae.png" alt="UAE Flag">
+                    </div>
+                    <div class="region-name">United Arab Emirates</div>
+                    <div class="region-shop">shopname.ae</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <p>Subscribe to our newsletter</p>
+        <p>Get daily news on upcoming offers from many suppliers all over the world</p>
+        <div class="input-wrapper">
+            <span class="email-icon">&#9993;</span>
+            <input type="email" placeholder="Email" />
+        </div>
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Brand Info -->
+            <div class="footer-col">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Logo">
+                    <span>Brand</span>
+                </div>
+                <div class="footer-text">
+                    Best information about the company gives here
+                </div>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="footer-col">
+                <div class="footer-title">About</div>
+                <ul>
+                    <li>About us</li>
+                    <li>Find stores</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+
+            <!-- Partnership -->
+            <div class="footer-col">
+                <div class="footer-title">Partnership</div>
+                <ul>
+                    <li>About us</li>
+                    <li>Find stores</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+
+            <!-- Information -->
+            <div class="footer-col">
+                <div class="footer-title">Information</div>
+                <ul>
+                    <li>Help center</li>
+                    <li>Money refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+            <!-- For users -->
+            <div class="footer-col">
+                <div class="footer-title">For users</div>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My orders</li>
+                </ul>
+            </div>
+
+            <!-- Get app -->
+            <div class="footer-col">
+                <div class="footer-title">Get app</div>
+                <button class="app-store">
+                    <i class="fab fa-apple"></i> App Store
+                </button>
+                <button class="google-play">
+                    <i class="fab fa-google-play"></i> Google Play
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
